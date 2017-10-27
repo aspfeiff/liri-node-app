@@ -3,7 +3,7 @@ var request = require('request');
 var twitter = require('twitter');
 var spotify = require('node-spotify-api');
 var client = new twitter(keys.twitterKeys);
-var spotifyClient = new spotify(keys.SpotifyKeys);
+var spotifyClient = new spotify(keys.spotifyKeys);
 var fs = require('fs');
 
 

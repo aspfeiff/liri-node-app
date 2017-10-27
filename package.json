@@ -18,6 +18,7 @@
   "homepage": "https://github.com/aspfeiff/liri-node-app#readme",
   "dependencies": {
     "node-spotify-api": "^1.0.7",
+    "request-json": "^0.6.2",
     "twitter": "^1.7.1"
   },
   "devDependencies": {}
