@@ -12,23 +12,23 @@ var action = process.argv[2];
 
 switch(action){
   case "my-tweets":
-    myTweets();
+  myTweets();
   break;
 
   case "spotify-this-song":
-    spotifySong();
+  spotifySong();
   break;
 
   case "movie-this":
-    movies();
+  movies();
   break;
 
   case "do-what-it-says":
-    doIt();
+  doIt();
   break;
 
   default:
-    console.log("{Please enter a command: my-tweets, spotify-this-song, movie-this, do-what-it-says}");
+  console.log("{Please enter a command: my-tweets, spotify-this-song, movie-this, do-what-it-says}");
   break;
 }
 
@@ -39,8 +39,8 @@ function myTweets(){
       for(var i = 0; i<tweets.length; i++){
         var date = tweets[i].created_at;
         console.log("@bootcamphw: " + tweets[i].text + " Create At: " + date.substring(0, 19)); 
-      
-     }
+        
+      }
     }else{
       console.log('Error');
     }
@@ -57,8 +57,8 @@ function spotifySong(song){
         console.log("Song: " + songData.name);
         console.log("Preview URL: " + songData.preview_url);
         console.log("Album: " + songData.album.name);
-       
-    	}
+        
+      }
     } else{
       console.log('Error');
     }
